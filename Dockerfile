@@ -3,7 +3,8 @@ FROM alpine
 ENV VERSION 1.5.0
 
 RUN set -ex \
-    && apk add --no-cache ca-certificates
+    && apk add --no-cache ca-certificates \
+    git
 
 RUN set -ex \
         && apk add --no-cache --virtual .phraseapp-build \
