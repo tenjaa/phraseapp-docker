@@ -4,7 +4,8 @@ ENV VERSION 1.5.0
 
 RUN set -ex \
     && apk add --no-cache ca-certificates \
-    git
+    git \
+    jq
 
 RUN set -ex \
         && apk add --no-cache --virtual .phraseapp-build \
