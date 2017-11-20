@@ -5,7 +5,8 @@ ENV VERSION 1.6.0
 RUN set -ex \
     && apk add --no-cache ca-certificates \
     git \
-    jq
+    jq \
+    util-linux
 
 RUN set -ex \
         && apk add --no-cache --virtual .phraseapp-build \
