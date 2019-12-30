@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV VERSION 1.16.0
+ENV VERSION 1.16.1
 
 RUN set -ex \
     && apk add --no-cache ca-certificates \
